@@ -1,0 +1,22 @@
+{
+  "name": "image-animation",
+  "version": "0.0.1",
+  "authors": [
+    "shengzhu.wsz <shengzhu.wsz@alibaba-inc.com>"
+  ],
+  "description": "Use images to realize the animation.",
+  "main": "demo.html",
+  "keywords": [
+    "animation",
+    "image"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/and80506/image-animation"
+}
