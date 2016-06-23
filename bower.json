@@ -1,8 +1,8 @@
 {
   "name": "image-animation",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "authors": [
-    "shengzhu.wsz <shengzhu.wsz@alibaba-inc.com>"
+    "andy wu <wushengzhu114@gmail.com>"
   ],
   "description": "Use images to realize the animation.",
   "main": "demo.html",

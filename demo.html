@@ -8,39 +8,24 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="./imageLoader.js"></script>
 <script type="text/javascript" src="./imageAnimation.js"></script>
-<img id="test" src="http://img.alibaba.com/images/cms/upload/wholesale/home_banner/2014/03/14_movie/2014312144850001.png" alt="">
+<img id="container" src="http://img.alibaba.com/images/cms/upload/wholesale/home_banner/2014/03/14_movie/2014312144850001.png" alt="">
 <style>
-#test {width: 500px; height: 420px; position: absolute; top:50%; left: 50%; margin: -210px 0 0 -250px;}
+#container {width: 500px; height: 420px; position: absolute; top:50%; left: 50%; margin: -210px 0 0 -250px;}
 </style>
 <script>
 $(document).ready(function() {
-    var images = {
-        config: {
-            frameMultiple: 5,//帧数倍 16.7ms * n
-            loopPlayTimes: 2,//循环播放次数
-            progress: 60000,//总播放时间
-            pause: 1000,//播放完成后暂停时间
-            prefix: 'http://img.alibaba.com/images/cms/upload/wholesale/home_banner/2014/03/14_movie/',
-            current: 2014312144850001,//从第几张开始播放
-            start: 2014312144850001,//开始播放的图片
-            end: 2014312144850100,//结束播放的图片
-            suffix: '.png'
-        },
-        getImagesArr: function() {
-            var config = this.config,
-                start = config.start,
-                end = config.end,
-                arr = [];
-            for (; start < end; start++) {
-                arr.push(config.prefix + start + config.suffix);
-            };
-            return arr;
-        }
+    var param = {
+        frameMultiple: 5,//帧数倍 16.7ms * n
+        loopPlayTimes: 2,//循环播放次数
+        progress: 60000,//总播放时间
+        pause: 1000,//播放完成后暂停时间
+        prefix: 'http://img.alibaba.com/images/cms/upload/wholesale/home_banner/2014/03/14_movie/',
+        current: 2014312144850001,//从第几张开始播放
+        start: 2014312144850001,//开始播放的图片
+        end: 2014312144850100,//结束播放的图片
+        suffix: '.png'
     };
-    new ImageAnimation('test', {
-    	config: images.config,
-    	imagesArr: images.getImagesArr()
-    });
+    new ImageAnimation('container', param);
 });
 </script>
 </body>
